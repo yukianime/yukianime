@@ -1,9 +1,6 @@
 $(document).ready(function() {
     // Array de nombres de los animes disponibles en tu sitio
     var animes = [
-        "Naruto",
-        "One Piece",
-        "Attack on Titan",
         "Majo no Tabitabi",
         "Gakkou Gurashi",
          // Agregamos "Majo no Tabitabi"
