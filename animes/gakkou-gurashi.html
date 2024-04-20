@@ -10,19 +10,37 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-custom-purple">
-    <a class="navbar-brand" href="/index.html">yukianime</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                  <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2 search-form" type="search" placeholder="Buscar anime" aria-label="Search" id="searchInput" style="border: none;">
-                      <div id="searchResults" class="dropdown-menu" aria-labelledby="searchInput"></div>
-                  </form>
-              </li>
-          </ul>
-      </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom-purple">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">yukianime</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">   
+    
+                    <!-- Esto quedó medio mal, tengo que arreglar el bug del color negro -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Catalogo
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">asd</a></li>
+                          <li><a class="dropdown-item" href="#">asd</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">asd</a></li>
+                        </ul>
+                      </li>
+                      
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 search-form" type="search" placeholder="Buscar anime" aria-label="Search" id="searchInput" style="border: none;">
+                    <div id="searchResults" class="dropdown-menu" aria-labelledby="searchInput"></div>
+                </form>
+                </li>
+            </div>
+        </div>
+    </nav>
 
 
     <div class="container text-center">
@@ -30,10 +48,14 @@
           <div class="col">
           </div>
 
+          <div class="cositas">
           <div class="container text-center">
             <div class="row align-items-start">
                 <div class="col"></div>
                 <div class="col">
+                    <div class="titulo-ver">
+                        <h1> Gakkou Gurashi Capitulo 1</h1>
+                    </div>
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -65,7 +87,7 @@
                 <div class="col"></div>
             </div>
         </div>
-        
+    </div>  
 
           </div>
           <div class="col">

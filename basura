@@ -1,0 +1,20 @@
+.navbar-brand,
+.navbar-nav .nav-link,
+.nav-link {
+    color: #ff29db;
+    padding-left: 3%;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover,
+.nav-link:hover{
+    color: #ffffff;
+}
+
+
+
+.search-form {
+    background-color: #f988ff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

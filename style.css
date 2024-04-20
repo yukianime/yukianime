@@ -1,34 +1,51 @@
 body{
-    background-color: #7f00b2;
+    background-color: #252725;
 }
 
 .bg-custom-purple {
-    background-color: #4c007d !important;
+    background-color: #474747 !important;
 }
 
+
+/* -------------- Navbar -------------- */
 
 .navbar-brand,
 .navbar-nav .nav-link,
 .nav-link {
-    color: #ff29db; /* Cambia el color del texto del Navbar */
+    color: #6ac6e2;
     padding-left: 3%;
 }
 
 .navbar-brand:hover,
 .navbar-nav .nav-link:hover,
 .nav-link:hover{
-    color: #ffffff; /* color texto al pasar el mouse */
+    color: #ffffff;
 }
 
+/* -------------- Navbar catalogo -------------- */
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent; /* O el color que desees */
+    color: #ff0000; /* Color de texto deseado */
+}
 
+.dropdown-menu .dropdown-item:focus {
+    background-color: transparent; /* O el color que desees */
+    color: #06ff1b; /* Color de texto deseado */
+}
+
+.dropdown-menu .dropdown-item.active {
+    background-color: transparent; /* O el color que desees */
+    color: #d0ff00; /* Color de texto deseado */
+}
+/* -------------- Navbar catalogo -------------- */
 
 .search-form {
-    background-color: #f988ff; /* Cambia el color de fondo según tu preferencia */
-    border-radius: 5px; /* Añade bordes redondeados al marco */
-    padding: 5px 10px; /* Añade un poco de espacio dentro del marco */
+    background-color: #6ac6e2;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
-
+/* -------------- Navbar -------------- */
 /* -------------- Marco -------------- */
 .anime-container {
     display: flex;
@@ -37,46 +54,55 @@ body{
 }
 
 .anime {
-    width: 150px; /* Ancho del rectángulo */
+    width: 150px;
     display: inline-block; /* Permitir que el tamaño del rectángulo se ajuste al contenido */
-    margin: 10px; /* Espacio entre los rectángulos */
-    border: 1px solid #ddd; /* Borde del rectángulo */
-    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     overflow: hidden; /* Oculta cualquier contenido que desborde */
-    background-color:#f988ff
+    background-color:#6ac6e2
 }
 
 .anime img {
-    width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    height: auto; /* Mantén la proporción de la imagen */
-    max-height: calc(100% - 30px); /* Limita el tamaño máximo de la imagen y deja espacio para el título */
+    width: 100%;
+    height: auto;
+    max-height: calc(100% - 30px); /* Limita el tamaño máximo de la imagen */
 }
 
 .anime-name {
-    text-align: center; /* Centra el nombre del anime */
-    margin: 10px 0; /* Espacio entre la imagen y el nombre */
+    text-align: center;
+    margin: 10px 0;
 }
 
 .anime-description {
-    color: #000; /* Cambia el color del texto a negro */
+    color: #000;
 }
 
 
 .anime-name {
-    color: #000; /* Cambia el color del texto a negro */
-    text-decoration: none; /* Elimina la decoración de texto */
+    color: #000;
+    text-decoration: none;
 }
 
 .anime-name:hover {
-    text-decoration: none; /* Elimina la decoración de texto en hover */
+    text-decoration: none;
 }
 
 /* -------------- Marco -------------- */
 
 
 .carousel-item iframe {
-    border: 4px solid #000; /* Grosor del borde */
-    border-radius: 10px; /* Bordes redondeados */
+    border: 4px solid #000;
+    border-radius: 10px;
     background-color: #242020;
 }
 
+
+.cositas{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.titulo-ver{
+    color: white;
+}
