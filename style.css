@@ -61,8 +61,8 @@ body{
 
 .anime img {
     width: 100%;
-    height: auto;
-    max-height: calc(100% - 30px); /* Limita el tamaño máximo de la imagen */
+    height: 250px;
+    max-height: calc(100% - 28px); /* Limita el tamaño máximo de la imagen */
 }
 
 .anime-name {
