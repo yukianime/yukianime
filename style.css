@@ -1,5 +1,6 @@
 body{
     background-color: #252725;
+    color: white;
 }
 
 .bg-custom-purple {
@@ -87,13 +88,11 @@ body{
 
 /* -------------- Marco -------------- */
 
-
 .carousel-item iframe {
     border: 4px solid #000;
     border-radius: 10px;
     background-color: #242020;
 }
-
 
 .cositas{
     padding-top: 10%;
@@ -103,6 +102,57 @@ body{
 .titulo-ver{
     color: white;
 }
+
+/* -------------- Index asdasdasd -------------- */
+
+.index-category h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0; 
+    align-self: center; 
+}
+
+
+.container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr)); 
+}
+
+.carousel-item {
+    border: 1px solid #ddd; /* Borde para cada elemento */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Para que la imagen no se desborde */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* Mejora la experiencia de desplazamiento en dispositivos táctiles */
+    }
+
+    .carousel-item {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        margin-right: 10px; /* Espacio entre elementos */
+    }
+}
+
+
 /* -------------- Animes -------------- */
 .container {
     padding: 20px;
