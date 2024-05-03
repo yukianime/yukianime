@@ -63,7 +63,7 @@ body{
 .anime img {
     width: 100%;
     height: 250px;
-    max-height: calc(100% - 28px); /* Limita el tamaño máximo de la imagen */
+    max-height: calc(100% - 28px);
 }
 
 .anime-name {
@@ -109,7 +109,8 @@ body{
     color: #ffffff;
     font-size: 24px;
     margin: 0; 
-    align-self: center; 
+    align-self: center;
+    word-wrap: break-word;
 }
 
 
@@ -117,6 +118,7 @@ body{
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    word-wrap: break-word;
 }
 
 .carousel {
@@ -125,9 +127,9 @@ body{
 }
 
 .carousel-item {
-    border: 1px solid #ddd; /* Borde para cada elemento */
-    border-radius: 5px; /* Bordes redondeados */
-    overflow: hidden; /* Para que la imagen no se desborde */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .carousel-item img {
@@ -135,20 +137,20 @@ body{
     height: auto;
 }
 
-/* Media query para ajustar el diseño en pantallas más pequeñas */
+
 @media screen and (max-width: 768px) {
     .carousel {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch; /* Mejora la experiencia de desplazamiento en dispositivos táctiles */
+        -webkit-overflow-scrolling: touch;
     }
 
     .carousel-item {
         flex: 0 0 auto;
         scroll-snap-align: start;
-        margin-right: 10px; /* Espacio entre elementos */
+        margin-right: 10px;
     }
 }
 
@@ -157,7 +159,6 @@ body{
 .container {
     padding: 20px;
     overflow: hidden;
-    white-space: nowrap;
 }
 
 .titulo-ver h1 {
