@@ -7,18 +7,23 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentVideoIndex = 0;
 
     updateChapterNumber();
+    loadVideo(currentVideoIndex);
 
     prevBtn.addEventListener("click", function() {
         currentVideoIndex = (currentVideoIndex - 1 + videoUrls.length) % videoUrls.length;
-        videoFrame.src = videoUrls[currentVideoIndex];
+        loadVideo(currentVideoIndex);
         updateChapterNumber();
     });
     
     nextBtn.addEventListener("click", function() {
         currentVideoIndex = (currentVideoIndex + 1) % videoUrls.length;
-        videoFrame.src = videoUrls[currentVideoIndex];
+        loadVideo(currentVideoIndex);
         updateChapterNumber();
     });
+
+    function loadVideo(index) {
+        videoFrame.src = videoUrls[index];
+    }
 
     function updateChapterNumber() {
         chapterNumber.textContent = currentVideoIndex + 1;
