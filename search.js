@@ -31,8 +31,8 @@ $(document).ready(function() {
             var link = $('<a>').addClass('dropdown-item').attr('href', '#').text(animes);
             link.on('click', function() {
 
-                var formattedAnimeName = animes.toLowerCase().replace(/\s/g, '-');
-                window.location.href = 'animes/' + encodeURIComponent(formattedAnimeName) + '.html';
+                var formattedAnimeName = animes.toLowerCase().replace(/\s/g, '-').replace(/!/g, '');
+                window.location.href = '/animes/' + encodeURIComponent(formattedAnimeName) + '.html';
             });
             searchResults.append(link);
         });
