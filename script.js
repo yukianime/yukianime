@@ -4,10 +4,10 @@ animeImages.forEach(animeImage => {
     const originalImageSrc = animeImage.src;
     
     animeImage.addEventListener('mouseover', function() {
-        animeImage.src = 'images/proximamente.png'; // Cambiar a la nueva imagen
+        animeImage.src = 'images/proximamente.png';
     });
     
     animeImage.addEventListener('mouseout', function() {
-        animeImage.src = originalImageSrc; // Restaurar la imagen original
+        animeImage.src = originalImageSrc;
     });
 });
