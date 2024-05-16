@@ -14,7 +14,8 @@ body{
 .navbar-nav .nav-link,
 .nav-link {
     color: #6ac6e2;
-    padding-left: 3%;
+    margin-left: 3%;
+    justify-content: center;
 }
 
 .navbar-brand:hover,
@@ -189,3 +190,34 @@ body{
     margin-right: 10px;
 }
 /* -------------- Animes -------------- */
+
+.anime {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(211, 211, 211, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.overlay-text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.anime:hover .overlay {
+    opacity: 1;
+}
