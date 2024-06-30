@@ -4,7 +4,8 @@ $(document).ready(function() {
         "Gakkou Gurashi",
         "Fousou no Frieren",
         "K-On!",
-        "Oniichan wa Oshimai!"
+        "Oniichan wa Oshimai!",
+        "Seiyuu Radio no Uraomote"
     ];
 
     $('#searchInput').on('input', function() {
