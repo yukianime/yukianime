@@ -10,7 +10,7 @@
 
         gtag('config', 'G-L12NB4NYB0');
     </script>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yukianime</title>
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-light bg-custom-purple">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">yukianime</a>
@@ -29,7 +29,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">   
     
-                    <!-- Esto quedó medio mal, tengo que arreglar el bug del color negro -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Catalogo
@@ -54,38 +53,33 @@
 
     <div class="container text-center">
         <div class="titulo-ver">
-            <h1>Slow Loop Capítulo <span id="chapterNumber"></span></h1>
+            <h1>Spy x Family Capítulo <span id="chapterNumber"></span></h1>
+        </div>
+
+        <div class="video-wrapper">
+            <iframe src="https://listeamed.net/e/NMRLEpzowkJ5XaG" title="Spy x Family"></iframe>
         </div>
         
-        <div class="container text-center">
-            <div class="titulo-ver">
-                <h1>Slow Loop Capítulo <span id="chapterNumber"></span></h1>
-            </div>
-            
-            <div class="video-wrapper">
-                <iframe id="videoFrame" allow="autoplay" allowfullscreen title="Slow Loop"></iframe>
-            </div>
-            
-            <div class="controls">
-                <button id="prevBtn" class="btn btn-primary">Anterior</button>
-                <button id="nextBtn" class="btn btn-primary">Siguiente</button>
-            </div>
+        <div class="controls">
+            <button id="prevBtn" class="btn btn-primary">Anterior</button>
+            <button id="nextBtn" class="btn btn-primary">Siguiente</button>
         </div>
-        
+    </div>
+    
     <script>
         const videoUrls = [
-        "https://drive.google.com/file/d/1-5B94bBbU_-cgiHnMJDqbtBA_KWNokq9/preview", 
-        "https://drive.google.com/file/d/1-VbMt5Brjh1BmHfGZ4pZFPXgZihbTlLU/preview", 
-        "https://drive.google.com/file/d/1-RJcOHvuDvpvxagvqQatgOeG9oCrVqOn/preview", 
-        "https://drive.google.com/file/d/1-OGu6J7xE-Bot-3hjK_LZsWlAQvElA1Y/preview", 
-        "https://drive.google.com/file/d/1-OFc7Pty8NErlquhqSjY9p6nTUi0k-m4/preview", 
-        "https://drive.google.com/file/d/1-H9BHRSB9nluxxTJR_9-poK9bEQd3PMn/preview", 
-        "https://drive.google.com/file/d/1-H7OuFq038rhka6Pipvl_suPoP6eeWVp/preview", 
-        "https://drive.google.com/file/d/1-F9oOv4tZZuCa0PZhJjEihubUKKcWk7D/preview", 
-        "https://drive.google.com/file/d/1-D0VrOenqVzWlBkx2-Dcu6N3VcZSw3D0/preview",
-        "https://drive.google.com/file/d/1-iCYp7ZrDrobfwhBRWzZrKqRQIn5VP_p/preview",
-        "https://drive.google.com/file/d/1-f6F65SLqnHzBlv4H5AL6qI58zIYhtmX/preview",
-        "https://drive.google.com/file/d/1-0zfbbyEr1YBpkoH9E8EHBhtzZ5NLzUo/preview"
+        "https://listeamed.net/e/NMRLEpzowkJ5XaG",
+        "https://listeamed.net/e/qL0YEyza7VdODRX",
+        "https://listeamed.net/e/qA3WOmMVRk4OKkz",
+        "https://listeamed.net/e/PlBVEZ1elYaxDv9",
+        "https://listeamed.net/e/JzkPxzzX7kXxbyd",
+        "https://listeamed.net/e/e028E6eGwoRxYAv",
+        "https://listeamed.net/e/04rQxWLo0YyEb2N",
+        "https://listeamed.net/e/QNB7xAW61PjO0WG",
+        "https://listeamed.net/e/JzkPxzzX7NXxbyd",
+        "https://listeamed.net/e/l4vexvgo82ZE8B9",
+        "https://listeamed.net/e/b4ZJx2mXbzV52P3",
+        "https://listeamed.net/e/PlBVEZ1el8axDv9"
         ];
     </script>
 
