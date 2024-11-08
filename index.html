@@ -1,158 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L12NB4NYB0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-L12NB4NYB0');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yukianime</title>
-    <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-
-    <meta property="og:title" content="yukianime"/>
-    <meta property="og:description" content="Ver anime gratis (actualmente en beta)"/>
-    <meta property="og:url" content="https://yukianime.vercel.app"/>
-    <meta property="og:image"content="images/og.png"/>
+    <script src="head.js"></script>
+    <script src="https://unpkg.com/mithril/mithril.js"></script>
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom-purple">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">yukianime</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">   
-    
-                    <!-- Esto quedó medio mal, tengo que arreglar el bug del color negro -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Catalogo
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Lista completa</a></li>
-                          <li><a class="dropdown-item" href="#">Generos</a></li>
-                          <li><a class="dropdown-item" href="#">Sugerencias</a></li>
-                        </ul>
-                      </li>
-                      
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 search-form" type="search" autocomplete="off" placeholder="Buscar anime" aria-label="Search" id="searchInput" style="border: none;">
-                    <div id="searchResults" class="dropdown-menu" aria-labelledby="searchInput"></div>
-                </form>
-                </li>
-            </div>
-        </div>
-    </nav>
+
+<script type="module">
+
+    import Navbar from './navbar.js';
+
+    var App = {
+        view: function() {
+            return m("div", [
+                m(Navbar),
+                m("div.container.text-center", [
+                    m("div.carousel-grid", [
+                        m("div.index-category", [
+                            m("h2", "Agregados Recientemente"),
+                            m("div#anime-carousel.carousel", [
+                                m("a", {href: "/animes/mahou-shoujo-madoka-magica.html"}, 
+                                    m("div.anime", [
+                                        m("img", {src: "https://cdn.myanimelist.net/images/anime/11/55225.jpg", alt: "Mahou Shoujo Madoka Magica"}),
+                                        m("p.anime-name", "Mahou Shoujo Madoka Magica")
+                                    ])
+                                ),
+                                m("a", {href: "/animes/spy-x-family.html"}, 
+                                    m("div.anime", [
+                                        m("img", {src: "https://cdn.myanimelist.net/images/anime/1441/122795.jpg", alt: "Spy x Family"}),
+                                        m("p.anime-name", "Spy x Family")
+                                    ])
+                                )
+                            ])
+                        ]),
+                        m("div.index-category", [
+                            m("h2", "Resto del poco pero honesto catálogo"),
+                            m("div#anime-carousel.carousel", [
+                                m("a", {href: "/animes/gakkou-gurashi.html"}, 
+                                    m("div.anime", [
+                                        m("img", {src: "https://cdn.myanimelist.net/images/anime/1798/91548.jpg", alt: "Gakkou Gurashi"}),
+                                        m("p.anime-name", "Gakkou Gurashi")
+                                    ])
+                                )
+                            ])
+                        ])
+                    ])
+                ])
+            ]);
+        }
+    };
 
 
-
-<div class="container text-center">
-    <div class="carousel-grid">
-
-        <div class="index-category">
-            <h2>Agregados Recientemente</h2>
-        <div class="carousel" id="anime-carousel">
-
-        <a href="/animes/mahou-shoujo-madoka-magica.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/11/55225.jpg" alt="Mahou Shoujo Madoka Magica">
-                <p class="anime-name">Mahou Shoujo Madoka Magica</p>
-            </div>
-        </a>
-
-        <a href="/animes/spy-x-family.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/1441/122795.jpg" alt="Spy x Family">
-                <p class="anime-name">Spy x Family</p>
-            </div>
-        </a>
-
-        <a href="/animes/seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/1301/93586.jpg" alt="Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai">
-                <p class="anime-name">Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai</p>
-            </div>
-        </a>
-
-        <a href="/animes/kono-subarashii-sekai-ni-shukufuku-wo.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/8/77831l.jpg" alt="Konosuba">
-                <p class="anime-name">Konosuba</p>
-            </div>
-        </a>
-
-        <a href="/animes/slow-loop.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/1360/119608.jpg" alt="Slow Loop">
-                <p class="anime-name">Slow Loop</p>
-            </div>
-        </a>
-
-        </div>
-    </div>
-
-        <div class="index-category">
-            <h2>Resto del poco pero honesto catálogo</h2>
-        <div class="carousel" id="anime-carousel">
-
-
-        <a href="/animes/gakkou-gurashi.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/1798/91548.jpg" alt="Gakkou Gurashi">
-                <p class="anime-name">Gakkou Gurashi</p>
-            </div>
-        </a>
-
-        <a href="/animes/majo-no-tabitabi.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/1802/108501.jpg" alt="Majo no Tabitabi">
-                <p class="anime-name">Majo no Tabitabi</p>
-            </div>
-        </a>
-
-        <a href="/animes/fousou-no-frieren.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/1015/138006.jpg" alt="Fousou no Frieren">
-                <p class="anime-name">Fousou no Frieren</p>
-            </div>
-        </a>
-
-        <a href="/animes/oniichan-wa-oshimai.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/1058/131632.jpg" alt="Oniichan wa Oshimai!">
-                <p class="anime-name">Oniichan wa Oshimai!</p>
-            </div>
-        </a>
-
-        <a href="/animes/jusuriya-no-hitorigoto.html">
-            <div class="anime">
-                <img src="https://cdn.myanimelist.net/images/anime/1708/138033l.jpg" alt="Kusuriya no Hitorigoto">
-                <p class="anime-name">Kusuriya no Hitorigoto</p>
-            </div>
-        </a>
-
-        </div>
-    </div>
-</div>
-
-    
-
+    m.route(document.body, "/", {
+        "/": App
+    });
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="search.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
